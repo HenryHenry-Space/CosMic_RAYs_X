@@ -1,5 +1,3 @@
-
-
 from XRL_main.algorithms.pytorch.ddpg.ddpg import ddpg as ddpg_pytorch
 
 # Loggers

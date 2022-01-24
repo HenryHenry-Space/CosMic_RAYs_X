@@ -39,13 +39,14 @@ class MLPQFunction(nn.Module):
         self.q = mlp([obs_dim + act_dim] + list(hidden_sizes) + [1], activation)
 
     def forward(self, obs, act):
+        print('size.obs = ', obs.size())
         q = self.q(torch.cat([obs, act], dim=-1))
         return torch.squeeze(q, -1) # Critical to ensure q has right shape.
 
 class MLPActorCritic(nn.Module):
 
     def __init__(self, observation_space, action_space, hidden_sizes=(256,256),
-                 activation=nn.ReLU, device=torch.device("cuda" if torch.cuda.is_available() else "cpu")):
+                 activation=nn.ReLU):
         super().__init__()
 
         obs_dim = observation_space.shape[0]
@@ -53,11 +54,9 @@ class MLPActorCritic(nn.Module):
         act_limit = action_space.high[0]
 
         # build policy and value functions
-        self.pi = MLPActor(obs_dim, act_dim, hidden_sizes, activation, act_limit).to(device)
-        self.q = MLPQFunction(obs_dim, act_dim, hidden_sizes, activation).to(device)
+        self.pi = MLPActor(obs_dim, act_dim, hidden_sizes, activation, act_limit)
+        self.q = MLPQFunction(obs_dim, act_dim, hidden_sizes, activation)
 
     def act(self, obs):
         with torch.no_grad():
-            return self.pi(obs)
-
-
+            return self.pi(obs).numpy()
