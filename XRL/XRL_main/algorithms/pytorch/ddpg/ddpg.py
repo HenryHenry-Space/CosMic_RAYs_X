@@ -1,7 +1,6 @@
 import sys
 import math
 import random
-import mpi4py
 from copy import deepcopy
 from this import d
 import numpy as np
@@ -35,20 +34,23 @@ class ReplayMemory(object):
     
 
 def ddpg(env_fn, actor_critic=core.MLPActorCritic, ac_kwargs=dict(), seed=0, 
-         steps_per_epoch=5000, epochs=100, replay_size=int(1e6), gamma=0.99, 
-         polyak=0.995, pi_lr=1e-3, q_lr=1e-3, batch_size=1000, start_steps=10000, 
-         update_after=1000, update_every=50, act_noise=0.1, num_test_episodes=10, 
+         steps_per_epoch=3000, epochs=100, replay_size=int(1e6), gamma=0.99, 
+         polyak=0.995, pi_lr=1e-4, q_lr=1e-4, batch_size=500, start_steps=10000, 
+         update_after=1000, update_every=50, act_noise=0.01, num_test_episodes=10, 
          max_ep_len=1000, device= torch.device("cuda" if torch.cuda.is_available() else "cpu")):
 
 
     torch.manual_seed(seed)
     np.random.seed(seed)
     env, test_env = env_fn(), env_fn()
-    obs_dim = env.observation_space.shape
-    act_dim = env.action_space.shape[0]
+    obs_dim = env.observation_space.shape[0]
 
+    print('obs_dim = ', obs_dim)
+    act_dim = env.action_space.shape[0]
+    print('act_dim = ', act_dim)
     # Action limit for clamping: critically, assumes all dimensions share the same bound!
     act_limit = env.action_space.high[0]
+    print('act_limit = ', act_limit)
 
     # Create actor-critic module and target networks
     ac = actor_critic(env.observation_space, env.action_space, **ac_kwargs)
@@ -168,10 +170,11 @@ def ddpg(env_fn, actor_critic=core.MLPActorCritic, ac_kwargs=dict(), seed=0,
         # use the learned policy (with some noise, via act_noise). 
         if t > start_steps:
             a = get_action(o, act_noise)
+            a_cpu = a.cpu().data.numpy()
         else:
             a = env.action_space.sample()
+            a_cpu = a
             a = torch.tensor([a], device=device)
-        a_cpu = get_action(o, 0).cpu().data.numpy()
         # Step the env
         o2, r, d, _ = env.step(a_cpu)
         ep_ret += r
@@ -228,7 +231,8 @@ def ddpg(env_fn, actor_critic=core.MLPActorCritic, ac_kwargs=dict(), seed=0,
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--env', type=str, default='HalfCheetah-v2')
+    parser.add_argument('--env', type=str, default='Reacher-v2')
+    # parser.add_argument('--env', type=str, default='CartPole-v0')
     parser.add_argument('--hid', type=int, default=256)
     parser.add_argument('--l', type=int, default=2)
     parser.add_argument('--gamma', type=float, default=0.99)
@@ -236,10 +240,6 @@ if __name__ == '__main__':
     parser.add_argument('--epochs', type=int, default=50)
     parser.add_argument('--exp_name', type=str, default='ddpg')
     args = parser.parse_args()
-
-    from XRL_main.utils.run_utils import setup_logger_kwargs
-    logger_kwargs = setup_logger_kwargs(args.exp_name, args.seed)
-
 
     ddpg(lambda : gym.make(args.env), actor_critic=core.MLPActorCritic,
          ac_kwargs=dict(hidden_sizes=[args.hid]*args.l), 

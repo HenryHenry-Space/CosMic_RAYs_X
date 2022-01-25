@@ -4,7 +4,7 @@ from copy import deepcopy
 import numpy as np
 import torch
 from torch.optim import Adam
-import gym
+import XRL_main
 import time
 import XRL_main.algorithms.pytorch.ddpg.core as core
 from XRL_main.utils.logx import EpochLogger
@@ -325,7 +325,9 @@ if __name__ == '__main__':
     from XRL_main.utils.run_utils import setup_logger_kwargs
     logger_kwargs = setup_logger_kwargs(args.exp_name, args.seed)
 
-    ddpg(lambda : gym.make(args.env), actor_critic=core.MLPActorCritic,
+    ddpg(lambda : XRL_main.make(args.env), actor_critic=core.MLPActorCritic,
          ac_kwargs=dict(hidden_sizes=[args.hid]*args.l), 
          gamma=args.gamma, seed=args.seed, epochs=args.epochs,
          logger_kwargs=logger_kwargs)
+
+
