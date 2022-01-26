@@ -2,7 +2,6 @@ import sys
 import math
 import random
 from copy import deepcopy
-from this import d
 import numpy as np
 import torch
 from torch.optim import Adam
