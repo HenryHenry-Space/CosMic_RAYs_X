@@ -11,8 +11,9 @@ class video_rec:
         if self.video_loc:
             from pyvirtualdisplay import Display
             Display().start()
-            
-    def render_episode(env: gym.Env, action_step): 
+            print('Video local = True')
+
+    def same_video(self):
         screen = env.render(mode='rgb_array')
         im = Image.fromarray(screen)
         images = [im]
@@ -24,9 +25,39 @@ class video_rec:
 
             screen = env.render(mode='rgb_array')
             images.append(Image.fromarray(screen))
+            
 
             if done:
                 break
+
+        return images
+
+
+    def play_video(self):
+        screen = env.render(mode='rgb_array')
+        im = Image.fromarray(screen)
+        images = [im]
+        s_next = env.reset()
+
+        for i in range(1000):
+
+            s_next, reward, done, _ = env.step(action_step)
+
+            screen = env.render(mode='rgb_array')
+            images.append(Image.fromarray(screen))
+            
+
+            if done:
+                break
+
+        return images
+
+            
+    def render_episode(self, self.env: gym.Env, action_step): 
+        if self.video_loc == True:
+          self.same_video()
+        else:
+
 
         return images
 

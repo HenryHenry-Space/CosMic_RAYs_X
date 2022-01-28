@@ -1,19 +1,9 @@
 from typing import Dict, List, Optional, Tuple
 import gym
 from PIL import Image
-# display = Display(visible=1, size=(400, 300))
 
-
-
-def server_model(comp_env):
-  if comp_env == 'server':
-    server_com = True
-    from pyvirtualdisplay import Display
-    Display().start()
-  else:
-    server_com = False
-  return server_com
-
+from pyvirtualdisplay import Display
+Display().start()
 
 def render_episode(env: gym.Env): 
 
@@ -35,14 +25,15 @@ def render_episode(env: gym.Env):
   return images
 
 if __name__ =='__main__':
-  server_model('server')
+  # server_model('server')
   env = gym.make("CartPole-v1")
   env.reset()
 
 
   # Save GIF image
   images = render_episode(env)
-  image_file = 'cartpole-v0_py.gif'
+  image_file = 'cartpole-v1_py.gif'
   # loop=0: loop forever, duration=1: play each frame for 1ms
-  images[0].save(
+  images[1].save(
       image_file, save_all=True, append_images=images[1:], loop=0, duration=1)
+  print(images[0])
