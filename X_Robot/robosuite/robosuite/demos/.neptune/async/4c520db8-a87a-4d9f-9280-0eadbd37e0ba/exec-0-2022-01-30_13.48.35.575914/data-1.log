@@ -1,0 +1,493 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "xhnfly-Strix-GL504GS-S5CS"}, "version": 3}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 4}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 6}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "cpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 7}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "cpu"]}, "version": 8}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "memory"], "min": 0.0, "max": 31.287979125976562, "unit": "GB"}, "version": 9}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "memory"]}, "version": 10}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "gpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 11}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "gpu"]}, "version": 12}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "gpu_memory"], "min": 0.0, "max": 7.9210205078125, "unit": "GB"}, "version": 13}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "gpu_memory"]}, "version": 14}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "", "step": null, "ts": 1643510916.0188434}]}, "version": 15}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Remember to stop your run once you\u2019ve finished logging your metadata (https://docs.neptune.ai/api-reference/run#.stop). It will be stopped automatically only when the notebook kernel/interactive console is terminated.\n", "step": null, "ts": 1643510916.0194407}]}, "version": 16}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 30.4, "step": null, "ts": 1643510916.0143588}]}, "version": 17}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 7.894309997558594, "step": null, "ts": 1643510916.0143588}]}, "version": 18}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu"], "values": [{"value": 8.0, "step": null, "ts": 1643510916.0143588}]}, "version": 19}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu_memory"], "values": [{"value": 0.3328857421875, "step": null, "ts": 1643510916.0143588}]}, "version": 20}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "device = ", "step": null, "ts": 1643510919.753213}]}, "version": 21}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": " ", "step": null, "ts": 1643510919.7535014}]}, "version": 22}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "cuda", "step": null, "ts": 1643510919.7535975}]}, "version": 23}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510919.753671}]}, "version": 24}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "dropout"], "value": 0.2}, "version": 25}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "learning_rate"], "value": 0.001}, "version": 26}
+{"obj": {"type": "AssignString", "path": ["parameters", "optimizer"], "value": "Adam"}, "version": 27}
+{"obj": {"type": "AssignInt", "path": ["parameters", "hid"], "value": 512}, "version": 28}
+{"obj": {"type": "AssignInt", "path": ["parameters", "l"], "value": 3}, "version": 29}
+{"obj": {"type": "AssignInt", "path": ["parameters", "seed"], "value": 0}, "version": 30}
+{"obj": {"type": "AssignInt", "path": ["parameters", "steps_per_epoch"], "value": 3000}, "version": 31}
+{"obj": {"type": "AssignInt", "path": ["parameters", "steps_video"], "value": 30000}, "version": 32}
+{"obj": {"type": "AssignInt", "path": ["parameters", "epochs"], "value": 100}, "version": 33}
+{"obj": {"type": "AssignInt", "path": ["parameters", "replay_size"], "value": 10000000}, "version": 34}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "gamma"], "value": 0.99}, "version": 35}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "polyak"], "value": 0.995}, "version": 36}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "pi_lr"], "value": 0.0001}, "version": 37}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "q_lr"], "value": 0.0001}, "version": 38}
+{"obj": {"type": "AssignInt", "path": ["parameters", "batch_size"], "value": 1000}, "version": 39}
+{"obj": {"type": "AssignInt", "path": ["parameters", "start_steps"], "value": 1000}, "version": 40}
+{"obj": {"type": "AssignInt", "path": ["parameters", "update_after"], "value": 2000}, "version": 41}
+{"obj": {"type": "AssignInt", "path": ["parameters", "update_every"], "value": 100}, "version": 42}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "act_noise"], "value": 0.01}, "version": 43}
+{"obj": {"type": "AssignInt", "path": ["parameters", "num_test_episodes"], "value": 1}, "version": 44}
+{"obj": {"type": "AssignInt", "path": ["parameters", "max_ep_len"], "value": 1000}, "version": 45}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "obs_dim = ", "step": null, "ts": 1643510919.894681}]}, "version": 46}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": " ", "step": null, "ts": 1643510919.8951738}]}, "version": 47}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "47", "step": null, "ts": 1643510919.89541}]}, "version": 48}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510919.895609}]}, "version": 49}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "act_dim = ", "step": null, "ts": 1643510919.8959482}]}, "version": 50}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": " ", "step": null, "ts": 1643510919.896164}]}, "version": 51}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "7", "step": null, "ts": 1643510919.8963444}]}, "version": 52}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510919.8965216}]}, "version": 53}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "act_limit = ", "step": null, "ts": 1643510919.8968225}]}, "version": 54}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": " ", "step": null, "ts": 1643510919.8971741}]}, "version": 55}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "1", "step": null, "ts": 1643510919.89739}]}, "version": 56}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510919.8975873}]}, "version": 57}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 0/300000 [00:00<?, ?it/s]", "step": null, "ts": 1643510922.4526021}]}, "version": 58}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "", "step": null, "ts": 1643510922.4532688}]}, "version": 59}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 0/300000 [00:00<?, ?it/s]", "step": null, "ts": 1643510922.453695}]}, "version": 60}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1643510922.4541407}]}, "version": 61}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 14.2, "step": null, "ts": 1643510926.02254}]}, "version": 62}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.727703094482422, "step": null, "ts": 1643510926.02254}]}, "version": 63}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu_memory"], "values": [{"value": 1.0390625, "step": null, "ts": 1643510926.02254}]}, "version": 64}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 5.1, "step": null, "ts": 1643510936.0233603}]}, "version": 65}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.347583770751953, "step": null, "ts": 1643510936.0233603}]}, "version": 66}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu_memory"], "values": [{"value": 1.0390625, "step": null, "ts": 1643510936.0233603}]}, "version": 67}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 0/300000 [00:00<?, ?it/s]", "step": null, "ts": 1643510943.9770093}]}, "version": 68}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.59831713 -0.07704128  0.56105835 -0.76345115  0.27984204 -0.71329343\n  0.88933783]", "step": null, "ts": 1643510943.9778275}]}, "version": 69}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510943.9780583}]}, "version": 70}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "/tmp/ipykernel_11641/2078812203.py:19: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /opt/conda/conda-bld/pytorch_1639180588308/work/torch/csrc/utils/tensor_new.cpp:201.)\n  a = torch.tensor([a_cpu], device=device)\n", "step": null, "ts": 1643510943.9815285}]}, "version": 71}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.04369664 -0.17067612 -0.47088878  0.54846738 -0.08769934  0.1368679\n -0.9624204 ]", "step": null, "ts": 1643510944.0300703}]}, "version": 72}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.0302885}]}, "version": 73}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 2/300000 [00:00<4:17:37, 19.41it/s]", "step": null, "ts": 1643510944.0808508}]}, "version": 74}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.23527099  0.22419145  0.23386799  0.88749616  0.3636406  -0.2809842\n -0.12593609]", "step": null, "ts": 1643510944.0924065}]}, "version": 75}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.092774}]}, "version": 76}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.39526239 -0.87954906  0.33353343  0.34127574 -0.57923488 -0.7421474\n -0.3691433 ]", "step": null, "ts": 1643510944.1202838}]}, "version": 77}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.1205432}]}, "version": 78}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.27257846  0.14039354 -0.12279697  0.97674768 -0.79591038 -0.58224649\n -0.67738096]", "step": null, "ts": 1643510944.1415284}]}, "version": 79}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.1419373}]}, "version": 80}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.30621665 -0.49341679 -0.06737845 -0.51114882 -0.68206083 -0.77924972\n  0.31265918]", "step": null, "ts": 1643510944.1657543}]}, "version": 81}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.1660714}]}, "version": 82}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 6/300000 [00:00<2:45:56, 30.13it/s]", "step": null, "ts": 1643510944.1878095}]}, "version": 83}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.7236341  -0.60683528 -0.26254966  0.64198646 -0.80579745  0.67588981\n -0.80780318]", "step": null, "ts": 1643510944.1886342}]}, "version": 84}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.1887352}]}, "version": 85}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.95291893 -0.0626976   0.95352218  0.20969104  0.47852716 -0.92162442\n -0.43438607]", "step": null, "ts": 1643510944.2070246}]}, "version": 86}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.2072508}]}, "version": 87}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.75960688 -0.4077196  -0.76254456 -0.36403364 -0.17147401 -0.87170501\n  0.38494424]", "step": null, "ts": 1643510944.2275958}]}, "version": 88}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.2278523}]}, "version": 89}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.13320291 -0.46922102  0.04649611 -0.81211898  0.15189299  0.8585924\n -0.3628621 ]", "step": null, "ts": 1643510944.2503793}]}, "version": 90}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.2507336}]}, "version": 91}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.33482076 -0.73640428  0.43265441 -0.42118781 -0.63361728  0.17302587\n -0.95978491]", "step": null, "ts": 1643510944.2717087}]}, "version": 92}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.2720363}]}, "version": 93}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 11/300000 [00:00<2:11:09, 38.12it/s]", "step": null, "ts": 1643510944.2926962}]}, "version": 94}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.65788006 -0.99060905  0.35563307 -0.45998405  0.47038804  0.92437709\n -0.50249371]", "step": null, "ts": 1643510944.2934117}]}, "version": 95}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.2936308}]}, "version": 96}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.15231467  0.18408386  0.14450381 -0.55383673  0.90549802 -0.10574924\n  0.69281734]", "step": null, "ts": 1643510944.311098}]}, "version": 97}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.3113167}]}, "version": 98}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.39895855 -0.4051261   0.62759564 -0.20698852  0.76220639  0.16254575\n  0.76347072]", "step": null, "ts": 1643510944.3293142}]}, "version": 99}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.329612}]}, "version": 100}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.38506318  0.45050856  0.00264876  0.91216727  0.2879804  -0.1522899\n  0.21278643]", "step": null, "ts": 1643510944.347828}]}, "version": 101}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.348048}]}, "version": 102}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.9616136  -0.39685037  0.32034707 -0.41984479  0.23603086 -0.1424626\n -0.72905187]", "step": null, "ts": 1643510944.3658764}]}, "version": 103}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.3659878}]}, "version": 104}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.40343535  0.13992982  0.18174552  0.1486505   0.30640164  0.30420654\n -0.13716313]", "step": null, "ts": 1643510944.3839357}]}, "version": 105}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.384046}]}, "version": 106}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 17/300000 [00:00<1:51:34, 44.81it/s]", "step": null, "ts": 1643510944.4025316}]}, "version": 107}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.79309319 -0.26487626 -0.12827015  0.78384671  0.61238798  0.40777717\n -0.79954623]", "step": null, "ts": 1643510944.4032705}]}, "version": 108}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.4034083}]}, "version": 109}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.83896523  0.4284826   0.99769401 -0.70110339  0.73625211 -0.67501413\n  0.23111913]", "step": null, "ts": 1643510944.4232962}]}, "version": 110}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.4235992}]}, "version": 111}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.75236003  0.69601646  0.61463792  0.13820148 -0.18563341 -0.86166601\n  0.39485755]", "step": null, "ts": 1643510944.4450104}]}, "version": 112}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.445284}]}, "version": 113}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.09291463  0.4441112   0.73276465  0.95104301  0.71160668 -0.97657183\n -0.28004387]", "step": null, "ts": 1643510944.4707456}]}, "version": 114}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.4709616}]}, "version": 115}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.45998112 -0.65674065  0.04207321 -0.89132402 -0.60000695 -0.96295641\n  0.58739541]", "step": null, "ts": 1643510944.493498}]}, "version": 116}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.4938338}]}, "version": 117}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 22/300000 [00:00<1:53:15, 44.14it/s]", "step": null, "ts": 1643510944.5186644}]}, "version": 118}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.55215062 -0.30929664  0.85616259  0.4088288  -0.93632214 -0.67061169\n  0.2429568 ]", "step": null, "ts": 1643510944.5193782}]}, "version": 119}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.519574}]}, "version": 120}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.15445718 -0.52421436  0.868428    0.22793191  0.07126561  0.17981995\n  0.46024406]", "step": null, "ts": 1643510944.5398881}]}, "version": 121}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.5401452}]}, "version": 122}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.37611001 -0.20355788 -0.5803125  -0.62761399  0.88874478  0.47910159\n -0.01908238]", "step": null, "ts": 1643510944.5611854}]}, "version": 123}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.5614128}]}, "version": 124}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.54517074 -0.49128704 -0.88394168 -0.13116675 -0.37640824  0.39268698\n -0.24449632]", "step": null, "ts": 1643510944.582215}]}, "version": 125}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.5824146}]}, "version": 126}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.64079264 -0.95064254 -0.86550074  0.35878555 -0.09260631  0.07315842\n  0.79334259]", "step": null, "ts": 1643510944.6005476}]}, "version": 127}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.600658}]}, "version": 128}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.98067789 -0.56620603  0.32615641 -0.47335525 -0.958698    0.51675731\n -0.3599657 ]", "step": null, "ts": 1643510944.6188529}]}, "version": 129}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.618988}]}, "version": 130}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 28/300000 [00:00<1:48:38, 46.02it/s]", "step": null, "ts": 1643510944.6403384}]}, "version": 131}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.23307221  0.17663423  0.66209691  0.25796369  0.74530131 -0.45291593\n  0.59609367]", "step": null, "ts": 1643510944.6411815}]}, "version": 132}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.6414607}]}, "version": 133}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.62872811  0.90558331  0.37497655 -0.56898465  0.89474118  0.46171161\n -0.49211671]", "step": null, "ts": 1643510944.6595347}]}, "version": 134}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.6597884}]}, "version": 135}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.57337605  0.03640143 -0.94867456 -0.58505985 -0.15062906 -0.25166004\n -0.07284915]", "step": null, "ts": 1643510944.6807883}]}, "version": 136}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.681106}]}, "version": 137}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.44474259  0.17356869  0.72771121 -0.76493629  0.03475821 -0.73586379\n  0.43371936]", "step": null, "ts": 1643510944.7008343}]}, "version": 138}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.70108}]}, "version": 139}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.20788059  0.13084262 -0.63344033 -0.71030448 -0.02388744 -0.28877452\n  0.88086389]", "step": null, "ts": 1643510944.718504}]}, "version": 140}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.7186918}]}, "version": 141}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.53065051  0.49732724  0.80743948 -0.83315513  0.10438494  0.16895214\n  0.92387276]", "step": null, "ts": 1643510944.7362192}]}, "version": 142}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.736438}]}, "version": 143}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 34/300000 [00:00<1:43:44, 48.19it/s]", "step": null, "ts": 1643510944.7542086}]}, "version": 144}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.41570495 -0.51834244 -0.79941212 -0.96714074  0.85905863  0.33983309\n  0.57030582]", "step": null, "ts": 1643510944.7548041}]}, "version": 145}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.7549121}]}, "version": 146}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.43653979  0.17282033 -0.87208947 -0.02874481  0.95499028  0.75301049\n -0.3236821 ]", "step": null, "ts": 1643510944.77308}]}, "version": 147}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.7733319}]}, "version": 148}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.92314031 -0.53659675  0.89863764  0.88275541  0.59840517  0.26089587\n  0.74857593]", "step": null, "ts": 1643510944.7915587}]}, "version": 149}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.791782}]}, "version": 150}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.41395943  0.69788711  0.23575338 -0.97352628 -0.30553296 -0.70371828\n  0.96365878]", "step": null, "ts": 1643510944.8094292}]}, "version": 151}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.8095424}]}, "version": 152}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.04325939 -0.00521727  0.27894503 -0.26283079 -0.72619946  0.64423547\n -0.62030418]", "step": null, "ts": 1643510944.8278646}]}, "version": 153}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.8281448}]}, "version": 154}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.02263797 -0.55136594 -0.80431103  0.72438303  0.94583898  0.92166932\n  0.813111  ]", "step": null, "ts": 1643510944.8461607}]}, "version": 155}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.846382}]}, "version": 156}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 40/300000 [00:00<1:39:59, 50.00it/s]", "step": null, "ts": 1643510944.8653877}]}, "version": 157}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.54809467 -0.3337097  -0.83779722 -0.18551766 -0.53553172 -0.73502473\n -0.89314564]", "step": null, "ts": 1643510944.866086}]}, "version": 158}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.8661776}]}, "version": 159}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.45118873 -0.97714508  0.5411615  -0.70610671 -0.84095583 -0.82079393\n  0.34409561]", "step": null, "ts": 1643510944.885484}]}, "version": 160}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.8857405}]}, "version": 161}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.50926558 -0.15892107  0.11473758  0.72110235  0.45408853 -0.45934419\n -0.7370344 ]", "step": null, "ts": 1643510944.9062083}]}, "version": 162}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.9064734}]}, "version": 163}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.88925136 -0.39680273 -0.4757637  -0.08771887  0.36656267  0.39125089\n -0.43296231]", "step": null, "ts": 1643510944.925978}]}, "version": 164}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.9262178}]}, "version": 165}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.24014609 -0.63769808  0.57709102 -0.88630385  0.39399448  0.55739079\n  0.55481512]", "step": null, "ts": 1643510944.9464092}]}, "version": 166}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.9466553}]}, "version": 167}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 45/300000 [00:00<1:40:10, 49.91it/s]", "step": null, "ts": 1643510944.9660504}]}, "version": 168}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.48115487 -0.25237372  0.17519927 -0.4543562  -0.2582944  -0.60589144\n -0.08028823]", "step": null, "ts": 1643510944.9667783}]}, "version": 169}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.966873}]}, "version": 170}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.9107754   0.59959177 -0.84608711  0.0376703  -0.3863798   0.1550859\n  0.91886668]", "step": null, "ts": 1643510944.984621}]}, "version": 171}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510944.9848578}]}, "version": 172}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.29114049 -0.92927513 -0.13919512  0.0200337   0.07235499  0.36278502\n -0.4448078 ]", "step": null, "ts": 1643510945.0030243}]}, "version": 173}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.0032375}]}, "version": 174}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.74227887 -0.21464865  0.91281145 -0.62573822  0.80796791  0.0876119\n -0.08617716]", "step": null, "ts": 1643510945.0208194}]}, "version": 175}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.021061}]}, "version": 176}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.76408282 -0.08279208  0.44833527 -0.20194936  0.80808879  0.38005004\n  0.39924411]", "step": null, "ts": 1643510945.039127}]}, "version": 177}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.0394187}]}, "version": 178}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.3445592   0.51355729  0.27212211 -0.51995945 -0.67892236  0.59278295\n  0.91833321]", "step": null, "ts": 1643510945.057264}]}, "version": 179}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.057493}]}, "version": 180}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 51/300000 [00:01<1:37:35, 51.23it/s]", "step": null, "ts": 1643510945.0768707}]}, "version": 181}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.08372235  0.18196833  0.71544529 -0.08555309  0.90374895  0.15150232\n  0.64153424]", "step": null, "ts": 1643510945.0776386}]}, "version": 182}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.0777369}]}, "version": 183}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.81768744  0.63104764 -0.68117107  0.25779688 -0.20313148 -0.8745741\n -0.1519355 ]", "step": null, "ts": 1643510945.0955648}]}, "version": 184}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.0960076}]}, "version": 185}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.48263187  0.69807662 -0.93339075  0.91796544 -0.2892623  -0.28658622\n -0.96734299]", "step": null, "ts": 1643510945.1170292}]}, "version": 186}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.117278}]}, "version": 187}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.62953535 -0.197481    0.85858283 -0.80077014  0.89060307  0.73897706\n -0.09167521]", "step": null, "ts": 1643510945.1362586}]}, "version": 188}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.1364903}]}, "version": 189}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.34659824 -0.53451174  0.22892941 -0.93385082 -0.96878787 -0.14240856\n -0.86385185]", "step": null, "ts": 1643510945.1555145}]}, "version": 190}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.1558158}]}, "version": 191}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.49611802 -0.55767817 -0.49361761 -0.73788954 -0.97592755 -0.76903141\n  0.23696052]", "step": null, "ts": 1643510945.1764774}]}, "version": 192}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.176731}]}, "version": 193}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 57/300000 [00:01<1:37:34, 51.23it/s]", "step": null, "ts": 1643510945.1939325}]}, "version": 194}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.94851243  0.98069    -0.18189181 -0.67409115  0.27752351 -0.01938931\n  0.97881955]", "step": null, "ts": 1643510945.1946342}]}, "version": 195}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.1947255}]}, "version": 196}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.86939159  0.56646888 -0.42320301 -0.51716276  0.32500914 -0.50787363\n  0.33171824]", "step": null, "ts": 1643510945.2128465}]}, "version": 197}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.2130742}]}, "version": 198}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.03461703 -0.15182202  0.10937562 -0.42589696  0.41314941 -0.17028626\n -0.27890888]", "step": null, "ts": 1643510945.2305}]}, "version": 199}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.2307765}]}, "version": 200}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.65731383  0.84993382 -0.90798538 -0.53474601 -0.30296126  0.62993296\n  0.97098286]", "step": null, "ts": 1643510945.2487614}]}, "version": 201}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.2490218}]}, "version": 202}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.93794341  0.80989669 -0.40688747  0.98402249 -0.50115992 -0.78818769\n  0.90190522]", "step": null, "ts": 1643510945.2661667}]}, "version": 203}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.2663734}]}, "version": 204}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.53315949  0.37953653 -0.88328728  0.4614182   0.76344042 -0.45512621\n -0.24188621]", "step": null, "ts": 1643510945.2845826}]}, "version": 205}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.2848752}]}, "version": 206}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 63/300000 [00:01<1:35:17, 52.46it/s]", "step": null, "ts": 1643510945.3023455}]}, "version": 207}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.25140763  0.49757652 -0.52438551 -0.6562938  -0.1014167  -0.39106319\n  0.67837824]", "step": null, "ts": 1643510945.303038}]}, "version": 208}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.3031478}]}, "version": 209}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.52451635  0.00477891  0.8851672   0.2679954   0.73457881  0.88041938\n  0.50152972]", "step": null, "ts": 1643510945.3231966}]}, "version": 210}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.323519}]}, "version": 211}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.39915012  0.93593113  0.98880158 -0.09635663 -0.85826044 -0.41441194\n -0.69529059]", "step": null, "ts": 1643510945.34466}]}, "version": 212}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.3449123}]}, "version": 213}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.16502725 -0.73742134  0.20823561 -0.23438388  0.79077177  0.93558934\n  0.0937698 ]", "step": null, "ts": 1643510945.3636034}]}, "version": 214}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.3638477}]}, "version": 215}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.45035286  0.18446084  0.79352232 -0.18653331  0.10415655 -0.45669446\n -0.0891117 ]", "step": null, "ts": 1643510945.3846974}]}, "version": 216}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.384957}]}, "version": 217}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.19657293 -0.50317307  0.01173277 -0.37923835 -0.25393027  0.04994088\n  0.50119005]", "step": null, "ts": 1643510945.4045355}]}, "version": 218}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.4047801}]}, "version": 219}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 69/300000 [00:01<1:37:29, 51.27it/s]", "step": null, "ts": 1643510945.425338}]}, "version": 220}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.33298507  0.84831753  0.72463709 -0.90261941 -0.49271495 -0.10772897\n -0.79074422]", "step": null, "ts": 1643510945.42635}]}, "version": 221}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.4280994}]}, "version": 222}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.30304802  0.48019505  0.36102896  0.24476886  0.42105681 -0.59015263\n -0.31660377]", "step": null, "ts": 1643510945.4497378}]}, "version": 223}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.449942}]}, "version": 224}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.35248496  0.75846953  0.08735611 -0.4346007  -0.93952948  0.42067366\n -0.98423179]", "step": null, "ts": 1643510945.4699035}]}, "version": 225}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.4702363}]}, "version": 226}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.25464186  0.06107443  0.84422292 -0.82101091 -0.18811536 -0.9513736\n -0.31477803]", "step": null, "ts": 1643510945.4914362}]}, "version": 227}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.491699}]}, "version": 228}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.24446212 -0.4418641  -0.5805001  -0.76859353  0.15428049  0.39054001\n  0.34391428]", "step": null, "ts": 1643510945.5129802}]}, "version": 229}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.513217}]}, "version": 230}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.89772204 -0.99459357  0.29439331  0.20078447  0.17747922  0.92554064\n -0.96625665]", "step": null, "ts": 1643510945.532956}]}, "version": 231}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.5332563}]}, "version": 232}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 75/300000 [00:01<1:41:18, 49.34it/s]", "step": null, "ts": 1643510945.5572872}]}, "version": 233}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.39296486  0.6273573   0.01961439 -0.33207026  0.58168033 -0.80551415\n -0.11592872]", "step": null, "ts": 1643510945.5582218}]}, "version": 234}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.558406}]}, "version": 235}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.03990475  0.38791282 -0.81822854 -0.544481   -0.17939687  0.24658935\n  0.77392156]", "step": null, "ts": 1643510945.5793674}]}, "version": 236}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.579592}]}, "version": 237}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.23765234 -0.73307706  0.96116027  0.74357147  0.00544152  0.84469596\n  0.08276159]", "step": null, "ts": 1643510945.5989683}]}, "version": 238}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.5992029}]}, "version": 239}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.84661214  0.65979474  0.93657282  0.83956562 -0.92793237 -0.65045599\n -0.22173065]", "step": null, "ts": 1643510945.6181142}]}, "version": 240}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.6183631}]}, "version": 241}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.90428539 -0.39994216 -0.67906471  0.77260933 -0.10721117  0.81575119\n -0.67953907]", "step": null, "ts": 1643510945.639117}]}, "version": 242}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.639456}]}, "version": 243}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 80/300000 [00:01<1:41:53, 49.06it/s]", "step": null, "ts": 1643510945.6607623}]}, "version": 244}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.32223502 -0.11947249 -0.84702646  0.39292629 -0.50520249 -0.92076895\n -0.8801114 ]", "step": null, "ts": 1643510945.66149}]}, "version": 245}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.6617165}]}, "version": 246}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.87784293  0.81546591  0.47976784  0.79612471  0.34516462  0.05787986\n -0.39110727]", "step": null, "ts": 1643510945.6806083}]}, "version": 247}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.6808503}]}, "version": 248}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.9959245  -0.27562188 -0.0587021  -0.24350965  0.95905386 -0.65068323\n -0.344024  ]", "step": null, "ts": 1643510945.7005975}]}, "version": 249}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.700815}]}, "version": 250}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.36069733 -0.87358476  0.21449875 -0.04470699 -0.43200005 -0.52317344\n  0.02902549]", "step": null, "ts": 1643510945.720371}]}, "version": 251}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.720613}]}, "version": 252}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.26414484 -0.08696022 -0.32504524  0.94098739 -0.73312114 -0.80639209\n -0.31321654]", "step": null, "ts": 1643510945.7408576}]}, "version": 253}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.7411735}]}, "version": 254}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 85/300000 [00:01<1:41:29, 49.25it/s]", "step": null, "ts": 1643510945.7612605}]}, "version": 255}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.1820538   0.31835294 -0.20548651  0.99855599 -0.29621401  0.44281334\n  0.27516539]", "step": null, "ts": 1643510945.761982}]}, "version": 256}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.7620761}]}, "version": 257}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.62610773  0.95245133  0.77958731  0.52912395  0.39649696 -0.32900366\n -0.70462884]", "step": null, "ts": 1643510945.780739}]}, "version": 258}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.7809508}]}, "version": 259}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.87472799 -0.51619659 -0.13543704  0.04399255  0.54616711  0.91748185\n -0.76535904]", "step": null, "ts": 1643510945.7994888}]}, "version": 260}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.7997072}]}, "version": 261}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.78599172  0.17938945  0.49079615  0.69630076  0.87166416  0.96685248\n -0.20039662]", "step": null, "ts": 1643510945.8185618}]}, "version": 262}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.8187807}]}, "version": 263}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.23932963 -0.70438265  0.36986888  0.31352392  0.72412519 -0.80548401\n -0.00444618]", "step": null, "ts": 1643510945.837315}]}, "version": 264}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.8375893}]}, "version": 265}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.16216386 -0.51688592 -0.66194919  0.71916167 -0.88293016 -0.05875819\n -0.768332  ]", "step": null, "ts": 1643510945.8564126}]}, "version": 266}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.8566737}]}, "version": 267}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 91/300000 [00:01<1:39:39, 50.16it/s]", "step": null, "ts": 1643510945.8762252}]}, "version": 268}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.08588248  0.95992465 -0.15258729  0.71424984 -0.76536887 -0.45749585\n -0.19241452]", "step": null, "ts": 1643510945.8771384}]}, "version": 269}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.8772557}]}, "version": 270}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.20037572  0.34276696 -0.31056375  0.42753374  0.2783738  -0.20167771\n -0.13647974]", "step": null, "ts": 1643510945.8961217}]}, "version": 271}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.8963554}]}, "version": 272}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.2290554  -0.85991562  0.64481348  0.30684232  0.45268493  0.073846\n -0.77904578]", "step": null, "ts": 1643510945.9165258}]}, "version": 273}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.916746}]}, "version": 274}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.18992877 -0.18925283 -0.35791402 -0.94009935  0.47450849 -0.78043108\n  0.21261627]", "step": null, "ts": 1643510945.9380221}]}, "version": 275}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.9382527}]}, "version": 276}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.40643499  0.26957265  0.9182845  -0.79340369  0.73433432 -0.94161953\n  0.06983371]", "step": null, "ts": 1643510945.9620893}]}, "version": 277}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.9624054}]}, "version": 278}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.19151276  0.04836772 -0.26980025 -0.61886617 -0.96175421  0.03629963\n  0.68555373]", "step": null, "ts": 1643510945.982663}]}, "version": 279}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510945.9828756}]}, "version": 280}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 97/300000 [00:02<1:41:20, 49.33it/s]", "step": null, "ts": 1643510946.0022602}]}, "version": 281}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.25356809 -0.55427236 -0.83893599 -0.82937815 -0.55720711 -0.79997188\n -0.4699206 ]", "step": null, "ts": 1643510946.0029986}]}, "version": 282}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510946.003115}]}, "version": 283}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.86770108 -0.86879027  0.71255236 -0.67575948  0.11936481  0.54691109\n -0.08718087]", "step": null, "ts": 1643510946.0232882}]}, "version": 284}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510946.023596}]}, "version": 285}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 11.9, "step": null, "ts": 1643510946.0243654}]}, "version": 286}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.412483215332031, "step": null, "ts": 1643510946.0243654}]}, "version": 287}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu"], "values": [{"value": 9.0, "step": null, "ts": 1643510946.0243654}]}, "version": 288}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu_memory"], "values": [{"value": 1.0390625, "step": null, "ts": 1643510946.0243654}]}, "version": 289}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.69326224 -0.60080772 -0.13403159  0.05646818 -0.30111942  0.5629592\n  0.5020433 ]", "step": null, "ts": 1643510946.0453444}]}, "version": 290}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510946.0455675}]}, "version": 291}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.85442361 -0.9420949   0.79138258 -0.21486242  0.75674499  0.38156955\n  0.97469751]", "step": null, "ts": 1643510946.064449}]}, "version": 292}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510946.0646713}]}, "version": 293}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.5185649  -0.27091075  0.00212635 -0.24722169 -0.27017633 -0.478191\n -0.00805941]", "step": null, "ts": 1643510946.0841043}]}, "version": 294}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510946.0843687}]}, "version": 295}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 102/300000 [00:02<1:41:14, 49.37it/s]", "step": null, "ts": 1643510946.1033423}]}, "version": 296}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.36347989 -0.44531946  0.04875962 -0.76523941 -0.68030943 -0.90638729\n  0.94146289]", "step": null, "ts": 1643510946.1042395}]}, "version": 297}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510946.1043437}]}, "version": 298}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.9922793  -0.64284006  0.22573351 -0.8372608   0.76379301  0.43924032\n  0.93277994]", "step": null, "ts": 1643510946.1245708}]}, "version": 299}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510946.1248558}]}, "version": 300}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.01527109 -0.39919263  0.09900115  0.86163743  0.04152287 -0.46558594\n  0.75479758]", "step": null, "ts": 1643510946.1444352}]}, "version": 301}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510946.1446667}]}, "version": 302}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.2561625  -0.9972333  -0.50462996 -0.36353298  0.71755494 -0.08299367\n -0.11082542]", "step": null, "ts": 1643510946.1649501}]}, "version": 303}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510946.1651864}]}, "version": 304}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[-0.32779547  0.76135625  0.89005355  0.98378066 -0.24651747  0.93229489\n  0.58375914]", "step": null, "ts": 1643510946.1853518}]}, "version": 305}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510946.1855717}]}, "version": 306}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 107/300000 [00:02<1:41:32, 49.22it/s]", "step": null, "ts": 1643510946.2057252}]}, "version": 307}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "[ 0.3513783  -0.51022104 -0.56708548 -0.66790435  0.84551322 -0.41184668\n -0.09381151]", "step": null, "ts": 1643510946.2067132}]}, "version": 308}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510946.2068768}]}, "version": 309}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "", "step": null, "ts": 1643510946.2155232}]}, "version": 310}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 107/300000 [00:02<1:44:33, 47.80it/s]", "step": null, "ts": 1643510946.2158983}]}, "version": 311}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1643510946.2163756}]}, "version": 312}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 8.1, "step": null, "ts": 1643510956.0329561}]}, "version": 313}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.374542236328125, "step": null, "ts": 1643510956.0329561}]}, "version": 314}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu_memory"], "values": [{"value": 1.0390625, "step": null, "ts": 1643510956.0329561}]}, "version": 315}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 6.9, "step": null, "ts": 1643510966.033966}]}, "version": 316}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.380615234375, "step": null, "ts": 1643510966.033966}]}, "version": 317}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu"], "values": [{"value": 12.0, "step": null, "ts": 1643510966.033966}]}, "version": 318}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu_memory"], "values": [{"value": 1.0390625, "step": null, "ts": 1643510966.033966}]}, "version": 319}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 0/300000 [00:00<?, ?it/s]", "step": null, "ts": 1643510967.3622146}]}, "version": 320}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.0121,  0.5563,  0.6885, -0.7219, -0.1462,  0.6857,  0.6361]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.3722668}]}, "version": 321}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.3727329}]}, "version": 322}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.7952, -0.6872, -0.3916, -0.8493, -0.1507, -0.7848,  0.1364]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.4027126}]}, "version": 323}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.403024}]}, "version": 324}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.5069,  0.1929, -0.7649,  0.9518,  0.8651, -0.2164, -0.5156]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.431611}]}, "version": 325}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.4319248}]}, "version": 326}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.4992, -0.0332, -0.9200,  0.2794, -0.1834, -0.2452,  0.6187]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.4611154}]}, "version": 327}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.4614282}]}, "version": 328}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 4/300000 [00:00<2:31:50, 32.93it/s]", "step": null, "ts": 1643510967.4843926}]}, "version": 329}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.4181,  0.9087, -0.2961,  0.7951,  0.5399, -0.2852,  0.2433]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.4857783}]}, "version": 330}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.486013}]}, "version": 331}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.4229,  0.7488, -0.7751, -0.5751, -0.6339, -0.1939,  0.4905]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.5084593}]}, "version": 332}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.5086942}]}, "version": 333}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.0538, -0.0246, -0.9989, -0.1492, -0.8729, -0.5835,  0.8648]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.528821}]}, "version": 334}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.5290432}]}, "version": 335}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.5692,  0.7167,  0.6058, -0.6817,  0.2114, -0.7687,  0.4558]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.548724}]}, "version": 336}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.5489445}]}, "version": 337}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.2749,  0.6239, -0.0412,  0.8297, -0.9013, -0.4142,  0.4301]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.5672965}]}, "version": 338}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.5674942}]}, "version": 339}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 9/300000 [00:00<1:59:28, 41.85it/s]", "step": null, "ts": 1643510967.5857353}]}, "version": 340}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.1638, -0.6541, -0.7856,  0.6347, -0.0537,  0.7646,  0.4666]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.5870154}]}, "version": 341}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.5872293}]}, "version": 342}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.1805, -0.2530,  0.0313,  0.7781,  0.4746, -0.9897,  0.3883]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.6082768}]}, "version": 343}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.608504}]}, "version": 344}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.8390,  0.4209, -0.6460, -0.0330, -0.7194, -0.2820,  0.8742]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.6317573}]}, "version": 345}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.6320648}]}, "version": 346}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.8466, -0.4343, -0.3207,  0.2004,  0.9264, -0.7044, -0.4862]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.6531532}]}, "version": 347}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.6534271}]}, "version": 348}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.7471, -0.0162,  0.7979, -0.6290,  0.0653, -0.3475, -0.3669]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.6781182}]}, "version": 349}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.6783373}]}, "version": 350}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 14/300000 [00:00<1:55:47, 43.18it/s]", "step": null, "ts": 1643510967.6975148}]}, "version": 351}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.1062, -0.1338, -0.2853,  0.8299,  0.4635,  0.4551, -0.4202]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.6988006}]}, "version": 352}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.698989}]}, "version": 353}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.1554,  0.5584,  0.5912, -0.3109,  0.5417,  0.4718, -0.7170]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.717111}]}, "version": 354}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.7173328}]}, "version": 355}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.7319, -0.1174, -0.0272, -0.1033,  0.1357,  0.2423, -0.0036]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.7356942}]}, "version": 356}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.735943}]}, "version": 357}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.7336,  0.2555, -0.1971, -0.1666,  0.6217, -0.3036, -0.5771]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.7539976}]}, "version": 358}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.7542152}]}, "version": 359}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.8812,  0.7521,  0.8371, -0.7598, -0.3311, -0.6493, -0.7682]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.7720726}]}, "version": 360}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.77219}]}, "version": 361}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.7997, -0.8862,  0.9610, -0.8071,  0.7269,  0.1330, -0.2642]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.7907863}]}, "version": 362}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.7910774}]}, "version": 363}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 20/300000 [00:00<1:45:28, 47.40it/s]", "step": null, "ts": 1643510967.8089814}]}, "version": 364}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.3153,  0.5147, -0.3709,  0.3146,  0.0347, -0.0301,  0.8023]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.8104334}]}, "version": 365}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.8106723}]}, "version": 366}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.1093,  0.6537,  0.4511, -0.9229,  0.5462, -0.5663,  0.8063]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.833597}]}, "version": 367}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.8338203}]}, "version": 368}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.9142, -0.3339, -0.8005, -0.0488,  0.6400, -0.4036, -0.6981]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.8527489}]}, "version": 369}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.8529801}]}, "version": 370}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.3395,  0.6278, -0.7192, -0.5453, -0.8623,  0.4114, -0.2095]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.8741186}]}, "version": 371}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.8745372}]}, "version": 372}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.3783,  0.4373, -0.3280,  0.4555,  0.6304, -0.5647,  0.9476]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.893872}]}, "version": 373}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.8940842}]}, "version": 374}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 25/300000 [00:00<1:44:20, 47.92it/s]", "step": null, "ts": 1643510967.9112358}]}, "version": 375}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.6753, -0.4183, -0.6404, -0.3090, -0.0399,  0.0444,  0.7072]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.9126718}]}, "version": 376}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.9129038}]}, "version": 377}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.7789, -0.5598,  0.2458, -0.7770, -0.0821, -0.3553, -0.3670]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.9338691}]}, "version": 378}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.9341557}]}, "version": 379}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.0348,  0.4597, -0.8616,  0.7583,  0.4696, -0.6470,  0.8783]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.9525206}]}, "version": 380}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.9527445}]}, "version": 381}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.0126,  0.9996, -0.6055,  0.0698, -0.4195, -0.3917,  0.1821]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.970446}]}, "version": 382}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.9706662}]}, "version": 383}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.8434,  0.6105,  0.4479,  0.1183,  0.8446, -0.0153,  0.7477]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510967.9886346}]}, "version": 384}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510967.9888687}]}, "version": 385}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.6680, -0.5723,  0.5425, -0.9757, -0.3543, -0.5409,  0.0137]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.007488}]}, "version": 386}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.007783}]}, "version": 387}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 31/300000 [00:00<1:40:56, 49.53it/s]", "step": null, "ts": 1643510968.0255682}]}, "version": 388}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.4737, -0.8046,  0.0298,  0.8768, -0.5427,  0.3543,  0.1858]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.027104}]}, "version": 389}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.0273173}]}, "version": 390}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.9799, -0.0483,  0.4175, -0.9120,  0.7590,  0.0402, -0.9387]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.0472622}]}, "version": 391}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.0474849}]}, "version": 392}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.5512,  0.9074,  0.1646, -0.7851, -0.4249, -0.0866, -0.9581]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.0660567}]}, "version": 393}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.0663314}]}, "version": 394}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.1768, -0.0211, -0.5126,  0.1773,  0.5065, -0.5283,  0.2410]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.0873876}]}, "version": 395}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.0875716}]}, "version": 396}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.2792,  0.8971,  0.5566,  0.6967, -0.0192, -0.6293,  0.9916]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.10813}]}, "version": 397}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.1083622}]}, "version": 398}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 36/300000 [00:00<1:41:47, 49.12it/s]", "step": null, "ts": 1643510968.1292856}]}, "version": 399}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.7413, -0.0571, -0.8638,  0.8877,  0.9298,  0.4388, -0.3000]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.1307719}]}, "version": 400}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.130907}]}, "version": 401}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.4912, -0.4694, -0.7454,  0.0516, -0.7164, -0.3665,  0.2534]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.152476}]}, "version": 402}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.152777}]}, "version": 403}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.4551, -0.9515, -0.1398,  0.3042,  0.7065, -0.0494,  0.9384]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.17447}]}, "version": 404}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.1747117}]}, "version": 405}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.4687, -0.9730, -0.0325, -0.4878,  0.6474, -0.5345, -0.3787]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.1939373}]}, "version": 406}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.1941714}]}, "version": 407}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.5825,  0.4303,  0.1161,  0.4099, -0.1627, -0.9894, -0.9773]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.213959}]}, "version": 408}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.2142422}]}, "version": 409}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 41/300000 [00:00<1:42:20, 48.85it/s]", "step": null, "ts": 1643510968.2329261}]}, "version": 410}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.0224, -0.8334, -0.8978,  0.9310,  0.7180, -0.6959, -0.9987]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.2345252}]}, "version": 411}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.234827}]}, "version": 412}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.8833, -0.4433, -0.6282,  0.3830, -0.7822, -0.4707,  0.9502]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.2567546}]}, "version": 413}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.2569933}]}, "version": 414}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.2789,  0.0414, -0.2042,  0.5490, -0.7181,  0.9347,  0.7222]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.2762794}]}, "version": 415}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.2765548}]}, "version": 416}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.2353, -0.9142,  0.4017,  0.8266,  0.0492, -0.2916, -0.7594]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.2981331}]}, "version": 417}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.2983766}]}, "version": 418}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.5098,  0.7700, -0.7995,  0.5180, -0.9659,  0.9341,  0.2301]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.3193474}]}, "version": 419}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.319567}]}, "version": 420}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 46/300000 [00:00<1:43:30, 48.30it/s]", "step": null, "ts": 1643510968.33917}]}, "version": 421}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.1049, -0.4081,  0.8586, -0.4682,  0.6563,  0.9702,  0.5668]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.3409874}]}, "version": 422}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.341262}]}, "version": 423}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.0380, -0.8679, -0.0552, -0.1235, -0.5944, -0.1528, -0.2845]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.3610232}]}, "version": 424}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.3613007}]}, "version": 425}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.6726, -0.1173, -0.4744,  0.0441, -0.9297,  0.8125,  0.6327]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.3806078}]}, "version": 426}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.3808358}]}, "version": 427}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.1052,  0.7036,  0.9248, -0.7790,  0.2617,  0.9960,  0.9758]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.3991861}]}, "version": 428}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.3994203}]}, "version": 429}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.2066, -0.7440,  0.1664, -0.9959, -0.6022,  0.9122, -0.3391]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.4188366}]}, "version": 430}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.4191043}]}, "version": 431}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.2768, -0.4383,  0.8956,  0.4571, -0.3407,  0.5835, -0.7837]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.4386976}]}, "version": 432}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.4389234}]}, "version": 433}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 52/300000 [00:01<1:42:01, 49.00it/s]", "step": null, "ts": 1643510968.4581351}]}, "version": 434}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.2154, -0.5576,  0.3675, -0.7951, -0.2059, -0.4467,  0.0127]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.459566}]}, "version": 435}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.459832}]}, "version": 436}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.3002,  0.4128, -0.9508,  0.2680, -0.5389, -0.4626,  0.6005]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.4786773}]}, "version": 437}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.4790137}]}, "version": 438}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.9111, -0.3669,  0.6536, -0.7920,  0.2680,  0.5021, -0.6880]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.5002904}]}, "version": 439}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.5005393}]}, "version": 440}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.1480,  0.7854, -0.7928, -0.9638,  0.1812, -0.1289,  0.5974]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.5211968}]}, "version": 441}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.5214732}]}, "version": 442}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.8469, -0.4017, -0.2232, -0.0275,  0.1763,  0.9677,  0.3947]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.5447214}]}, "version": 443}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.544977}]}, "version": 444}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 57/300000 [00:01<1:43:25, 48.34it/s]", "step": null, "ts": 1643510968.564995}]}, "version": 445}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.2209, -0.4725,  0.8893, -0.7289,  0.4405,  0.8508,  0.3293]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.566345}]}, "version": 446}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.5665278}]}, "version": 447}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.1539, -0.6020, -0.2650,  0.4137,  0.2991,  0.8560,  0.7337]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.5862794}]}, "version": 448}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.5867803}]}, "version": 449}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.6323,  0.8229, -0.4473, -0.2610, -0.2402,  0.1209,  0.3364]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.606773}]}, "version": 450}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.6070006}]}, "version": 451}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.4266, -0.9611, -0.2016, -0.3829,  0.8844,  0.7765,  0.7206]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.6267674}]}, "version": 452}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.6270368}]}, "version": 453}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.3060, -0.3114,  0.0977,  0.6305, -0.8028,  0.6021, -0.9176]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.64617}]}, "version": 454}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.6464021}]}, "version": 455}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 62/300000 [00:01<1:42:52, 48.59it/s]", "step": null, "ts": 1643510968.666657}]}, "version": 456}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.6328,  0.6151, -0.8980,  0.2543,  0.0049, -0.6604, -0.7032]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.6684203}]}, "version": 457}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.668724}]}, "version": 458}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.5465,  0.1354,  0.9660,  0.9645,  0.9853, -0.7628,  0.8765]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.6878977}]}, "version": 459}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.6881986}]}, "version": 460}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.5109, -0.0836,  0.5148, -0.5928,  0.1326, -0.6284, -0.7905]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.707668}]}, "version": 461}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.7078576}]}, "version": 462}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.7669, -0.2847, -0.9907, -0.1503,  0.3284, -0.1966, -0.8284]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.7276819}]}, "version": 463}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.727911}]}, "version": 464}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.8746, -0.4438, -0.6614,  0.9302, -0.6975,  0.6109,  0.1722]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.748021}]}, "version": 465}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.7482822}]}, "version": 466}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 67/300000 [00:01<1:42:09, 48.94it/s]", "step": null, "ts": 1643510968.767019}]}, "version": 467}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.1386,  0.0242,  0.9435, -0.2723,  0.5758,  0.1106, -0.2087]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.768338}]}, "version": 468}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.7685673}]}, "version": 469}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.9109,  0.1966, -0.7622, -0.1649,  0.5632,  0.3875,  0.8327]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.7875516}]}, "version": 470}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.7877843}]}, "version": 471}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.4812,  0.5164, -0.0802,  0.1472,  0.9101,  0.9586,  0.7232]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.8067455}]}, "version": 472}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.8070009}]}, "version": 473}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.2818,  0.7754,  0.2772, -0.1400, -0.9285,  0.5403,  0.0042]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.8255043}]}, "version": 474}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.8257346}]}, "version": 475}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.5724,  0.4960,  0.5871, -0.3987,  0.6016,  0.0977, -0.0533]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.8451047}]}, "version": 476}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.8453994}]}, "version": 477}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.3503, -0.9573, -0.7954, -0.4156,  0.9660, -0.7205, -0.3388]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.8643687}]}, "version": 478}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.8646324}]}, "version": 479}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 73/300000 [00:01<1:40:30, 49.74it/s]", "step": null, "ts": 1643510968.883782}]}, "version": 480}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.8979, -0.3375, -0.3593,  0.8936,  0.6903, -0.2345, -0.9505]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.8858664}]}, "version": 481}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.8860888}]}, "version": 482}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[ 0.6621,  0.3211, -0.6953,  0.9921, -0.7995,  0.7342, -0.4115]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.9052255}]}, "version": 483}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.905555}]}, "version": 484}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "tensor([[-0.1293,  0.5909,  0.3550,  0.8757,  0.2423, -0.8044,  0.7687]],\n       device='cuda:0', dtype=torch.float64)", "step": null, "ts": 1643510968.9276767}]}, "version": 485}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643510968.927937}]}, "version": 486}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "", "step": null, "ts": 1643510968.9331038}]}, "version": 487}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|          | 75/300000 [00:01<1:44:41, 47.75it/s]", "step": null, "ts": 1643510968.9335735}]}, "version": 488}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1643510968.934008}]}, "version": 489}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 13.4, "step": null, "ts": 1643510976.0348103}]}, "version": 490}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 11.417388916015625, "step": null, "ts": 1643510976.0348103}]}, "version": 491}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu_memory"], "values": [{"value": 1.0390625, "step": null, "ts": 1643510976.0348103}]}, "version": 492}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1643510980.7878637}]}, "version": 493}
