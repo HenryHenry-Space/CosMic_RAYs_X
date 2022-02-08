@@ -64,6 +64,13 @@
 /home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ee_ur5e_moveit_config/CMakeFiles/install/local.dir
 /home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ee_ur5e_moveit_config/CMakeFiles/rebuild_cache.dir
 /home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ee_ur5e_moveit_config/CMakeFiles/install.dir
+/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ee_ur5e_usage/CMakeFiles/install/strip.dir
+/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ee_ur5e_usage/CMakeFiles/edit_cache.dir
+/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ee_ur5e_usage/CMakeFiles/list_install_components.dir
+/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ee_ur5e_usage/CMakeFiles/test.dir
+/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ee_ur5e_usage/CMakeFiles/install/local.dir
+/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ee_ur5e_usage/CMakeFiles/rebuild_cache.dir
+/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ee_ur5e_usage/CMakeFiles/install.dir
 /home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/robotiq/robotiq_2f_140_gripper_visualization/CMakeFiles/install/strip.dir
 /home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/robotiq/robotiq_2f_140_gripper_visualization/CMakeFiles/edit_cache.dir
 /home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/robotiq/robotiq_2f_140_gripper_visualization/CMakeFiles/list_install_components.dir

@@ -380,6 +380,12 @@ ee_ur5e_moveit_config_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X
 //Value Computed by CMake
 ee_ur5e_moveit_config_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/ee_ur5e/ee_ur5e_moveit_config
 
+//Value Computed by CMake
+ee_ur5e_usage_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ee_ur5e_usage
+
+//Value Computed by CMake
+ee_ur5e_usage_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/ee_ur5e/ee_ur5e_usage
+
 //The directory containing a CMake configuration file for eigen_stl_containers.
 eigen_stl_containers_DIR:PATH=/opt/ros/melodic/share/eigen_stl_containers/cmake
 
@@ -878,7 +884,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=24
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=25
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

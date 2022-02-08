@@ -513,6 +513,24 @@ X_UR/ee_ur5e/ee_ur5e_moveit_config/preinstall:
 .PHONY : X_UR/ee_ur5e/ee_ur5e_moveit_config/preinstall
 
 #=============================================================================
+# Directory level rules for directory X_UR/ee_ur5e/ee_ur5e_usage
+
+# Convenience name for "all" pass in the directory.
+X_UR/ee_ur5e/ee_ur5e_usage/all:
+
+.PHONY : X_UR/ee_ur5e/ee_ur5e_usage/all
+
+# Convenience name for "clean" pass in the directory.
+X_UR/ee_ur5e/ee_ur5e_usage/clean:
+
+.PHONY : X_UR/ee_ur5e/ee_ur5e_usage/clean
+
+# Convenience name for "preinstall" pass in the directory.
+X_UR/ee_ur5e/ee_ur5e_usage/preinstall:
+
+.PHONY : X_UR/ee_ur5e/ee_ur5e_usage/preinstall
+
+#=============================================================================
 # Directory level rules for directory X_UR/robotiq/robotiq_2f_140_gripper_visualization
 
 # Convenience name for "all" pass in the directory.
