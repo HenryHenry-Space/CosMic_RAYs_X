@@ -6,7 +6,7 @@ from os import path as os_path
 from pkgutil import extend_path
 from sys import path as sys_path
 
-__extended_path = '/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/UR5_driver/ur_kinematics/src'.split(';')
+__extended_path = '/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/fmauch_universal_robot/ur_kinematics/src'.split(';')
 for p in reversed(__extended_path):
     sys_path.insert(0, p)
     del p

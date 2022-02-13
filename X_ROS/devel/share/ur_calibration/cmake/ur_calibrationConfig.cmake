@@ -67,7 +67,7 @@ set(ur_calibration_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(ur_calibration_SOURCE_PREFIX /home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/UR5_driver/Universal_Robots_ROS_Driver/ur_calibration)
+  set(ur_calibration_SOURCE_PREFIX /home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/Universal_Robots_ROS_Driver/ur_calibration)
   set(ur_calibration_DEVEL_PREFIX /home/xhnfly/Cosmic_rays_X/X_ROS/devel)
   set(ur_calibration_INSTALL_PREFIX "")
   set(ur_calibration_PREFIX ${ur_calibration_DEVEL_PREFIX})
@@ -110,7 +110,7 @@ if(NOT "/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/../../../../include;/opt/ros/me
         message(FATAL_ERROR "Project 'ur_calibration' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'ur_calibration' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/UR5_driver/Universal_Robots_ROS_Driver/ur_calibration/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'ur_calibration' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/Universal_Robots_ROS_Driver/ur_calibration/${idir}'.  ${_report}")
     endif()
     _list_append_unique(ur_calibration_INCLUDE_DIRS ${include})
   endforeach()

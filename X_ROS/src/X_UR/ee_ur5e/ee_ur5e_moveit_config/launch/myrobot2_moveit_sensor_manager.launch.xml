@@ -1,3 +1,0 @@
-<launch>
-    <rosparam command="load" file="$(find ee_ur5e_moveit_config)/config/sensors.yaml" />
-</launch>

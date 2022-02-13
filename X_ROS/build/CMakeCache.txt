@@ -294,7 +294,7 @@ UBUNTU:BOOL=TRUE
 UBUNTU_BIONIC:BOOL=TRUE
 
 //Path to a file.
-_file_name:FILEPATH=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/UR5_driver/Universal_Robots_ROS_Driver/ur_robot_driver/test/driver.test
+_file_name:FILEPATH=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/Universal_Robots_ROS_Driver/ur_robot_driver/test/driver.test
 
 //Path to a file.
 _gmock_INCLUDES:FILEPATH=/usr/include/gmock/gmock.h
@@ -345,10 +345,10 @@ controller_manager_DIR:PATH=/opt/ros/melodic/share/controller_manager/cmake
 controller_manager_msgs_DIR:PATH=/opt/ros/melodic/share/controller_manager_msgs/cmake
 
 //Value Computed by CMake
-controller_stopper_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/UR5_driver/Universal_Robots_ROS_Driver/controller_stopper
+controller_stopper_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/Universal_Robots_ROS_Driver/controller_stopper
 
 //Value Computed by CMake
-controller_stopper_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/UR5_driver/Universal_Robots_ROS_Driver/controller_stopper
+controller_stopper_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/Universal_Robots_ROS_Driver/controller_stopper
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
@@ -357,10 +357,10 @@ cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 dynamic_reconfigure_DIR:PATH=/opt/ros/melodic/share/dynamic_reconfigure/cmake
 
 //Value Computed by CMake
-ee_ur5e_description_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ee_ur5e_description
+ee_ur5e_description_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ur5/ee_ur5e_description
 
 //Value Computed by CMake
-ee_ur5e_description_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/ee_ur5e/ee_ur5e_description
+ee_ur5e_description_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/ee_ur5e/ur5/ee_ur5e_description
 
 //Value Computed by CMake
 ee_ur5e_driver_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ee_ur5e_driver
@@ -369,10 +369,10 @@ ee_ur5e_driver_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_
 ee_ur5e_driver_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/ee_ur5e/ee_ur5e_driver
 
 //Value Computed by CMake
-ee_ur5e_gazebo_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ee_ur5e_gazebo
+ee_ur5e_gazebo_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ur5/ee_ur5e_gazebo
 
 //Value Computed by CMake
-ee_ur5e_gazebo_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/ee_ur5e/ee_ur5e_gazebo
+ee_ur5e_gazebo_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/ee_ur5e/ur5/ee_ur5e_gazebo
 
 //Value Computed by CMake
 ee_ur5e_moveit_config_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/ee_ur5e_moveit_config
@@ -523,28 +523,34 @@ random_numbers_DIR:PATH=/opt/ros/melodic/share/random_numbers/cmake
 realtime_tools_DIR:PATH=/opt/ros/melodic/share/realtime_tools/cmake
 
 //Value Computed by CMake
-robotiq_2f_140_gripper_visualization_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/robotiq/robotiq_2f_140_gripper_visualization
+robotiq_2f_140_gripper_visualization_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/gripper/robotiq_2f_140_gripper_visualization
 
 //Value Computed by CMake
-robotiq_2f_140_gripper_visualization_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/robotiq/robotiq_2f_140_gripper_visualization
+robotiq_2f_140_gripper_visualization_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/ee_ur5e/gripper/robotiq_2f_140_gripper_visualization
 
 //Value Computed by CMake
-robotiq_2f_gripper_action_server_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/robotiq/robotiq_2f_gripper_action_server
+robotiq_2f_gripper_action_server_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/gripper/robotiq_2f_gripper_action_server
 
 //Value Computed by CMake
-robotiq_2f_gripper_action_server_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/robotiq/robotiq_2f_gripper_action_server
+robotiq_2f_gripper_action_server_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/ee_ur5e/gripper/robotiq_2f_gripper_action_server
 
 //Value Computed by CMake
-robotiq_2f_gripper_control_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/robotiq/robotiq_2f_gripper_control
+robotiq_2f_gripper_control_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/gripper/robotiq_2f_gripper_control
 
 //The directory containing a CMake configuration file for robotiq_2f_gripper_control.
 robotiq_2f_gripper_control_DIR:PATH=/home/xhnfly/Cosmic_rays_X/X_ROS/devel/share/robotiq_2f_gripper_control/cmake
 
 //Value Computed by CMake
-robotiq_2f_gripper_control_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/robotiq/robotiq_2f_gripper_control
+robotiq_2f_gripper_control_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/ee_ur5e/gripper/robotiq_2f_gripper_control
 
 //Value Computed by CMake
-robotiq_ethercat_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/robotiq/robotiq_ethercat
+robotiq_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/gripper/robotiq
+
+//Value Computed by CMake
+robotiq_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/ee_ur5e/gripper/robotiq
+
+//Value Computed by CMake
+robotiq_ethercat_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/gripper/robotiq_ethercat
 
 //The directory containing a CMake configuration file for robotiq_ethercat.
 robotiq_ethercat_DIR:PATH=/home/xhnfly/Cosmic_rays_X/X_ROS/devel/share/robotiq_ethercat/cmake
@@ -553,25 +559,25 @@ robotiq_ethercat_DIR:PATH=/home/xhnfly/Cosmic_rays_X/X_ROS/devel/share/robotiq_e
 robotiq_ethercat_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
-robotiq_ethercat_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/robotiq/robotiq_ethercat
+robotiq_ethercat_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/ee_ur5e/gripper/robotiq_ethercat
 
 //Value Computed by CMake
-robotiq_ft_sensor_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/robotiq/robotiq_ft_sensor
+robotiq_ft_sensor_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/gripper/robotiq_ft_sensor
 
 //Value Computed by CMake
-robotiq_ft_sensor_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/robotiq/robotiq_ft_sensor
+robotiq_ft_sensor_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/ee_ur5e/gripper/robotiq_ft_sensor
 
 //Value Computed by CMake
-robotiq_modbus_rtu_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/robotiq/robotiq_modbus_rtu
+robotiq_modbus_rtu_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/gripper/robotiq_modbus_rtu
 
 //Value Computed by CMake
-robotiq_modbus_rtu_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/robotiq/robotiq_modbus_rtu
+robotiq_modbus_rtu_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/ee_ur5e/gripper/robotiq_modbus_rtu
 
 //Value Computed by CMake
-robotiq_modbus_tcp_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/robotiq/robotiq_modbus_tcp
+robotiq_modbus_tcp_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/ee_ur5e/gripper/robotiq_modbus_tcp
 
 //Value Computed by CMake
-robotiq_modbus_tcp_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/robotiq/robotiq_modbus_tcp
+robotiq_modbus_tcp_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/ee_ur5e/gripper/robotiq_modbus_tcp
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/melodic/share/rosconsole/cmake
@@ -667,10 +673,10 @@ tf_conversions_DIR:PATH=/opt/ros/melodic/share/tf_conversions/cmake
 trajectory_msgs_DIR:PATH=/opt/ros/melodic/share/trajectory_msgs/cmake
 
 //Value Computed by CMake
-universal_robots_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/UR5_driver/universal_robots
+universal_robots_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/fmauch_universal_robot/universal_robots
 
 //Value Computed by CMake
-universal_robots_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/UR5_driver/universal_robots
+universal_robots_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/fmauch_universal_robot/universal_robots
 
 //Dependencies for target
 ur10_kin_LIB_DEPENDS:STATIC=
@@ -691,58 +697,58 @@ ur5_kin_LIB_DEPENDS:STATIC=
 ur5_moveit_plugin_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libmoveit_rdf_loader.so;general;/opt/ros/melodic/lib/libmoveit_kinematics_plugin_loader.so;general;/opt/ros/melodic/lib/libmoveit_robot_model_loader.so;general;/opt/ros/melodic/lib/libmoveit_constraint_sampler_manager_loader.so;general;/opt/ros/melodic/lib/libmoveit_planning_pipeline.so;general;/opt/ros/melodic/lib/libmoveit_trajectory_execution_manager.so;general;/opt/ros/melodic/lib/libmoveit_plan_execution.so;general;/opt/ros/melodic/lib/libmoveit_planning_scene_monitor.so;general;/opt/ros/melodic/lib/libmoveit_collision_plugin_loader.so;general;/opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/melodic/lib/libmoveit_ros_occupancy_map_monitor.so;general;/opt/ros/melodic/lib/libmoveit_exceptions.so;general;/opt/ros/melodic/lib/libmoveit_background_processing.so;general;/opt/ros/melodic/lib/libmoveit_kinematics_base.so;general;/opt/ros/melodic/lib/libmoveit_robot_model.so;general;/opt/ros/melodic/lib/libmoveit_transforms.so;general;/opt/ros/melodic/lib/libmoveit_robot_state.so;general;/opt/ros/melodic/lib/libmoveit_robot_trajectory.so;general;/opt/ros/melodic/lib/libmoveit_planning_interface.so;general;/opt/ros/melodic/lib/libmoveit_collision_detection.so;general;/opt/ros/melodic/lib/libmoveit_collision_detection_fcl.so;general;/opt/ros/melodic/lib/libmoveit_kinematic_constraints.so;general;/opt/ros/melodic/lib/libmoveit_planning_scene.so;general;/opt/ros/melodic/lib/libmoveit_constraint_samplers.so;general;/opt/ros/melodic/lib/libmoveit_planning_request_adapter.so;general;/opt/ros/melodic/lib/libmoveit_profiler.so;general;/opt/ros/melodic/lib/libmoveit_python_tools.so;general;/opt/ros/melodic/lib/libmoveit_trajectory_processing.so;general;/opt/ros/melodic/lib/libmoveit_distance_field.so;general;/opt/ros/melodic/lib/libmoveit_collision_distance_field.so;general;/opt/ros/melodic/lib/libmoveit_kinematics_metrics.so;general;/opt/ros/melodic/lib/libmoveit_dynamics_solver.so;general;/opt/ros/melodic/lib/libmoveit_utils.so;general;/opt/ros/melodic/lib/libmoveit_test_utils.so;general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libfcl.so;general;/opt/ros/melodic/lib/libkdl_parser.so;general;/opt/ros/melodic/lib/liburdf.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_world.so;general;/opt/ros/melodic/lib/librosconsole_bridge.so;general;/opt/ros/melodic/lib/libsrdfdom.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/melodic/lib/libgeometric_shapes.so;general;/opt/ros/melodic/lib/liboctomap.so;general;/opt/ros/melodic/lib/liboctomath.so;general;/opt/ros/melodic/lib/librandom_numbers.so;general;/opt/ros/melodic/lib/liborocos-kdl.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/melodic/lib/libtf_conversions.so;general;/opt/ros/melodic/lib/libkdl_conversions.so;general;/opt/ros/melodic/lib/liborocos-kdl.so.1.4.0;general;/opt/ros/melodic/lib/libtf.so;general;/opt/ros/melodic/lib/libtf2_ros.so;general;/opt/ros/melodic/lib/libactionlib.so;general;/opt/ros/melodic/lib/libmessage_filters.so;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libtf2.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;ur5_kin;
 
 //Value Computed by CMake
-ur5e_moveit_config_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/UR5_driver/ur5e_moveit_config
+ur5e_moveit_config_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/fmauch_universal_robot/ur5e_moveit_config
 
 //Value Computed by CMake
-ur5e_moveit_config_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/UR5_driver/ur5e_moveit_config
+ur5e_moveit_config_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/fmauch_universal_robot/ur5e_moveit_config
 
 //Value Computed by CMake
-ur_calibration_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/UR5_driver/Universal_Robots_ROS_Driver/ur_calibration
+ur_calibration_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/Universal_Robots_ROS_Driver/ur_calibration
 
 //Value Computed by CMake
-ur_calibration_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/UR5_driver/Universal_Robots_ROS_Driver/ur_calibration
+ur_calibration_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/Universal_Robots_ROS_Driver/ur_calibration
 
 //The directory containing a CMake configuration file for ur_client_library.
 ur_client_library_DIR:PATH=/opt/ros/melodic/lib/cmake/ur_client_library
 
 //Value Computed by CMake
-ur_dashboard_msgs_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/UR5_driver/Universal_Robots_ROS_Driver/ur_dashboard_msgs
+ur_dashboard_msgs_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/Universal_Robots_ROS_Driver/ur_dashboard_msgs
 
 //The directory containing a CMake configuration file for ur_dashboard_msgs.
 ur_dashboard_msgs_DIR:PATH=/home/xhnfly/Cosmic_rays_X/X_ROS/devel/share/ur_dashboard_msgs/cmake
 
 //Value Computed by CMake
-ur_dashboard_msgs_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/UR5_driver/Universal_Robots_ROS_Driver/ur_dashboard_msgs
+ur_dashboard_msgs_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/Universal_Robots_ROS_Driver/ur_dashboard_msgs
 
 //Value Computed by CMake
-ur_description_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/UR5_driver/ur_description
+ur_description_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/fmauch_universal_robot/ur_description
 
 //Value Computed by CMake
-ur_description_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/UR5_driver/ur_description
+ur_description_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/fmauch_universal_robot/ur_description
 
 //Value Computed by CMake
-ur_gazebo_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/UR5_driver/ur_gazebo
+ur_gazebo_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/fmauch_universal_robot/ur_gazebo
 
 //Value Computed by CMake
-ur_gazebo_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/UR5_driver/ur_gazebo
+ur_gazebo_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/fmauch_universal_robot/ur_gazebo
 
 //Value Computed by CMake
-ur_kinematics_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/UR5_driver/ur_kinematics
+ur_kinematics_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/fmauch_universal_robot/ur_kinematics
 
 //Value Computed by CMake
-ur_kinematics_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/UR5_driver/ur_kinematics
+ur_kinematics_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/fmauch_universal_robot/ur_kinematics
 
 //The directory containing a CMake configuration file for ur_msgs.
 ur_msgs_DIR:PATH=/opt/ros/melodic/share/ur_msgs/cmake
 
 //Value Computed by CMake
-ur_robot_driver_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/UR5_driver/Universal_Robots_ROS_Driver/ur_robot_driver
+ur_robot_driver_BINARY_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/build/X_UR/Universal_Robots_ROS_Driver/ur_robot_driver
 
 //The directory containing a CMake configuration file for ur_robot_driver.
 ur_robot_driver_DIR:PATH=/home/xhnfly/Cosmic_rays_X/X_ROS/devel/share/ur_robot_driver/cmake
 
 //Value Computed by CMake
-ur_robot_driver_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/UR5_driver/Universal_Robots_ROS_Driver/ur_robot_driver
+ur_robot_driver_SOURCE_DIR:STATIC=/home/xhnfly/Cosmic_rays_X/X_ROS/src/X_UR/Universal_Robots_ROS_Driver/ur_robot_driver
 
 //Dependencies for the target
 ur_robot_driver_plugin_LIB_DEPENDS:STATIC=general;ur_client_library::urcl;general;/opt/ros/melodic/lib/libscaled_joint_trajectory_controller.so;general;/opt/ros/melodic/lib/libjoint_trajectory_controller.so;general;/opt/ros/melodic/lib/libcontrol_toolbox.so;general;/opt/ros/melodic/lib/libspeed_scaling_state_controller.so;general;/opt/ros/melodic/lib/librealtime_tools.so;general;/opt/ros/melodic/lib/libtf.so;general;/opt/ros/melodic/lib/liborocos-kdl.so;general;/opt/ros/melodic/lib/libtf2_ros.so;general;/opt/ros/melodic/lib/libmessage_filters.so;general;/opt/ros/melodic/lib/libtf2.so;general;/opt/ros/melodic/lib/libpass_through_controllers.so;general;/opt/ros/melodic/lib/libactionlib.so;general;/opt/ros/melodic/lib/libcontroller_manager.so;general;/opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/melodic/lib/libkdl_parser.so;general;/opt/ros/melodic/lib/liborocos-kdl.so.1.4.0;general;/opt/ros/melodic/lib/liburdf.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_world.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/melodic/lib/librosconsole_bridge.so;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
@@ -884,7 +890,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=25
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=23
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
