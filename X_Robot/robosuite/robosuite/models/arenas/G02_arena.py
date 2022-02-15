@@ -39,6 +39,7 @@ class EETable(Arena):
         self.table_collision = self.table_body.find("./geom[@name='table_collision']")
         self.table_visual = self.table_body.find("./geom[@name='table_visual']")
         self.table_top = self.table_body.find("./site[@name='table_top']")
+        self.table_torch = self.table_body.find("./site[@name='touch']")
 
         self.has_legs = has_legs
         self.table_legs_visual = [
@@ -62,6 +63,7 @@ class EETable(Arena):
         self.table_top.set(
             "pos", array_to_string(np.array([0, 0, self.table_half_size[2]]))
         )
+        self.table_torch.set("size", array_to_string(self.table_half_size))
 
         # If we're not using legs, set their size to 0
         if not self.has_legs:

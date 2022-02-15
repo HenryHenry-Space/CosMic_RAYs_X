@@ -8,6 +8,9 @@ from robosuite.environments.manipulation.pick_place import PickPlace
 from robosuite.environments.manipulation.door import Door
 from robosuite.environments.manipulation.EElab_test1 import EElab_test1
 from robosuite.environments.manipulation.EElab_test2 import EElab_test2
+# from robosuite.environments.manipulation.EElab_test3 import EElab_test3
+from robosuite.environments.manipulation.EElab_test4 import EElab_test4
+from robosuite.environments.manipulation.EElab_test5 import EElab_test5
 
 from robosuite.environments.manipulation.wipe import Wipe
 from robosuite.environments.manipulation.two_arm_lift import TwoArmLift
