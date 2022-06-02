@@ -1,0 +1,8 @@
+prefix=/home/xhnfly/Cosmic_rays_X/X_ROS/install
+
+Name: ee_ur5e_moveit_config
+Description: Description of ee_ur5e_moveit_config
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

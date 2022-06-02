@@ -1,0 +1,2 @@
+set(object_analytics_msgs_MESSAGE_FILES "/home/xhnfly/Cosmic_rays_X/X_ROS/src/ros_object_analytics/object_analytics_msgs/msg/ObjectInBox3D.msg;/home/xhnfly/Cosmic_rays_X/X_ROS/src/ros_object_analytics/object_analytics_msgs/msg/ObjectsInBoxes3D.msg;/home/xhnfly/Cosmic_rays_X/X_ROS/src/ros_object_analytics/object_analytics_msgs/msg/TrackedObject.msg;/home/xhnfly/Cosmic_rays_X/X_ROS/src/ros_object_analytics/object_analytics_msgs/msg/TrackedObjects.msg")
+set(object_analytics_msgs_SERVICE_FILES "")

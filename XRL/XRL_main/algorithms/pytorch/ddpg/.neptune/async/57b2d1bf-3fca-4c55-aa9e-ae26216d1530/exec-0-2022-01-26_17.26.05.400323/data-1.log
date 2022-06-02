@@ -1,0 +1,60 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "xhnfly-Strix-GL504GS-S5CS"}, "version": 3}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 4}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 6}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "cpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 7}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "cpu"]}, "version": 8}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "memory"], "min": 0.0, "max": 31.287979125976562, "unit": "GB"}, "version": 9}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "memory"]}, "version": 10}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "gpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 11}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "gpu"]}, "version": 12}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "gpu_memory"], "min": 0.0, "max": 7.9210205078125, "unit": "GB"}, "version": 13}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "gpu_memory"]}, "version": 14}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "", "step": null, "ts": 1643178365.7849956}]}, "version": 15}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Remember to stop your run once you\u2019ve finished logging your metadata (https://docs.neptune.ai/api-reference/run#.stop). It will be stopped automatically only when the notebook kernel/interactive console is terminated.\n", "step": null, "ts": 1643178365.7865202}]}, "version": 16}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 18.3, "step": null, "ts": 1643178365.781131}]}, "version": 17}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 16.344898223876953, "step": null, "ts": 1643178365.781131}]}, "version": 18}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu"], "values": [{"value": 2.0, "step": null, "ts": 1643178365.781131}]}, "version": 19}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu_memory"], "values": [{"value": 0.36181640625, "step": null, "ts": 1643178365.781131}]}, "version": 20}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "device = ", "step": null, "ts": 1643178366.6291287}]}, "version": 21}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": " ", "step": null, "ts": 1643178366.6296248}]}, "version": 22}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "cuda", "step": null, "ts": 1643178366.629826}]}, "version": 23}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643178366.6299243}]}, "version": 24}
+{"obj": {"type": "AssignInt", "path": ["parameters", "batch_size"], "value": 500}, "version": 25}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "dropout"], "value": 0.2}, "version": 26}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "learning_rate"], "value": 0.001}, "version": 27}
+{"obj": {"type": "AssignString", "path": ["parameters", "optimizer"], "value": "Adam"}, "version": 28}
+{"obj": {"type": "AssignInt", "path": ["parameters", "hid"], "value": 64}, "version": 29}
+{"obj": {"type": "AssignInt", "path": ["parameters", "l"], "value": 3}, "version": 30}
+{"obj": {"type": "AssignInt", "path": ["parameters", "seed"], "value": 0}, "version": 31}
+{"obj": {"type": "AssignInt", "path": ["parameters", "steps_per_epoch"], "value": 3000}, "version": 32}
+{"obj": {"type": "AssignInt", "path": ["parameters", "epochs"], "value": 100}, "version": 33}
+{"obj": {"type": "AssignInt", "path": ["parameters", "replay_size"], "value": 1000000}, "version": 34}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "gamma"], "value": 0.99}, "version": 35}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "polyak"], "value": 0.995}, "version": 36}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "pi_lr"], "value": 0.0001}, "version": 37}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "q_lr"], "value": 0.0001}, "version": 38}
+{"obj": {"type": "AssignInt", "path": ["parameters", "start_steps"], "value": 10000}, "version": 39}
+{"obj": {"type": "AssignInt", "path": ["parameters", "update_after"], "value": 1000}, "version": 40}
+{"obj": {"type": "AssignInt", "path": ["parameters", "update_every"], "value": 50}, "version": 41}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "act_noise"], "value": 0.01}, "version": 42}
+{"obj": {"type": "AssignInt", "path": ["parameters", "num_test_episodes"], "value": 10}, "version": 43}
+{"obj": {"type": "AssignInt", "path": ["parameters", "max_ep_len"], "value": 1000}, "version": 44}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "obs_dim = ", "step": null, "ts": 1643178366.838264}]}, "version": 45}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": " ", "step": null, "ts": 1643178366.8395426}]}, "version": 46}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "11", "step": null, "ts": 1643178366.839802}]}, "version": 47}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643178366.8398924}]}, "version": 48}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "act_dim = ", "step": null, "ts": 1643178366.840199}]}, "version": 49}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": " ", "step": null, "ts": 1643178366.8403919}]}, "version": 50}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "2", "step": null, "ts": 1643178366.8406096}]}, "version": 51}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643178366.8409371}]}, "version": 52}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "act_limit = ", "step": null, "ts": 1643178366.8413193}]}, "version": 53}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": " ", "step": null, "ts": 1643178366.8414922}]}, "version": 54}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "1.0", "step": null, "ts": 1643178366.8416653}]}, "version": 55}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1643178366.8418188}]}, "version": 56}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "/tmp/ipykernel_24447/1472389618.py:156: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /opt/conda/conda-bld/pytorch_1639180588308/work/torch/csrc/utils/tensor_new.cpp:201.)\n  o = torch.tensor([o], device=device)\n", "step": null, "ts": 1643178368.5987637}]}, "version": 57}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 15.7, "step": null, "ts": 1643178375.7898417}]}, "version": 58}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 18.144081115722656, "step": null, "ts": 1643178375.7898417}]}, "version": 59}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu_memory"], "values": [{"value": 1.05810546875, "step": null, "ts": 1643178375.7898417}]}, "version": 60}

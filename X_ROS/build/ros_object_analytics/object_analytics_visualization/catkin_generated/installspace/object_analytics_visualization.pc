@@ -1,0 +1,8 @@
+prefix=/home/xhnfly/Cosmic_rays_X/X_ROS/install
+
+Name: object_analytics_visualization
+Description: Description of object_analytics_visualization
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib -lobject_analytics_visualization
+Requires: object_analytics_msgs object_msgs visualization_msgs rospy cv_bridge opencv2
